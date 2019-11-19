@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
              else if (mStoryIndex == 2 && isAT3 == true){
                  storyText.setText(R.string.T6_End);
+                 topButtonRed.setVisibility(View.GONE);
+                 BottomButtonBlue.setVisibility(View.GONE);
              }
 
              else if (mStoryIndex == 2 && isAT3 == false){
@@ -52,7 +54,9 @@ public class MainActivity extends AppCompatActivity {
                  isAT3 = true;
                  mStoryIndex++;
              }
-             else {storyText.setText(R.string.T6_End);}
+             else {storyText.setText(R.string.T6_End);
+                 topButtonRed.setVisibility(View.GONE);
+                 BottomButtonBlue.setVisibility(View.GONE);}
            }
        });
 
@@ -72,10 +76,14 @@ public class MainActivity extends AppCompatActivity {
 
                 else if (mStoryIndex==2&& isAT3==false){
                   storyText.setText(R.string.T4_End);
+                    topButtonRed.setVisibility(View.GONE);
+                    BottomButtonBlue.setVisibility(View.GONE);
                 }
 
                 else {
                     storyText.setText(R.string.T5_End);
+                    topButtonRed.setVisibility(View.GONE);
+                    BottomButtonBlue.setVisibility(View.GONE);
                 }
 
             }
