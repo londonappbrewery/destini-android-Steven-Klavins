@@ -8,11 +8,11 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button topButtonRed;
-    Button BottomButtonBlue;
-    TextView storyText;
-    boolean isAT3 = false;
-    int mStoryIndex = 1;
+    private Button topButtonRed;
+    private Button BottomButtonBlue;
+    private TextView storyText;
+    private boolean isAT3 = false;
+    private int mStoryIndex = 1;
 
 
     @Override
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         BottomButtonBlue.setText(R.string.T1_Ans2);
         storyText.setText(R.string.T1_Story);
 
-        
+
 
         topButtonRed.setOnClickListener(new View.OnClickListener() {
            @Override
